@@ -1,12 +1,16 @@
 #pragma once
+#include <string>
+
+
+
 
 class FBullCowGame {
 public:
 	void Reset(); //TODO make a rich return value.
 	int GetMaxTries();
-	int GetCurrentTry;
+	int GetCurrentTry();
 	bool IsGameWon();
-	bool CheckGuessValidity(string); // TODO make a more rich return value
+	bool CheckGuessValidity(std::string); // TODO make a more rich return value
 
 
 
